@@ -8,6 +8,7 @@
     "test:unit:watch": "npm run test:unit -- --watch",
     "test:snapshot": "jest --config ./test/jest.config.json",
     "test:snapshot:watch": "npm run test:snapshot -- --watch",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "test:cypress": "start-server-and-test start http://localhost:8080 cypress",
     "cypress": "cypress run"
   },
